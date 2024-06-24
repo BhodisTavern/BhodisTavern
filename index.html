@@ -1,1 +1,92 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhodisTavern - Willowshore</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        @font-face {
+            font-family: 'RegularFont';
+            src: url('fonts/regular.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'TitleFont';
+            src: url('fonts/title.otf') format('opentype');
+        }
+        body {
+            font-family: 'RegularFont', sans-serif;
+            background: url('images/Background1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f0e4d7;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'TitleFont', serif;
+            color: #d4af37;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: url('images/banner.jpg') no-repeat center center;
+            background-size: cover;
+            border-bottom: 5px solid #8b4513;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            background-color: rgba(139, 69, 19, 0.8);
+            padding: 10px 0;
+            border-top: 2px solid #8b4513;
+            border-bottom: 2px solid #8b4513;
+        }
+        .nav img {
+            width: 150px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+        .nav img:hover {
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border: 5px solid #8b4513;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="banner">
+        <img src="images/Sog banner.png" alt="Seasons of Ghosts Banner" style="width: 100%; height: auto;">
+    </header>
+    <nav class="nav">
+        <a href="#home"><img src="images/homenav.jpg" alt="Home"></a>
+        <a href="#campaigns"><img src="images/campaigns.jpg" alt="Campaigns"></a>
+        <a href="#characters"><img src="images/characters.jpg" alt="Characters"></a>
+        <a href="#forums"><img src="images/forums.jpg" alt="Forums"></a>
+        <a href="#resources"><img src="images/resources.jpg" alt="Resources"></a>
+        <a href="#calendar"><img src="images/calender.jpg" alt="Calendar"></a>
+    </nav>
+    <main>
+        <section id="home" class="content">
+            <h1>Welcome to BhodisTavern</h1>
+            <p>Explore the mystical town of Willowshore, embark on adventures, and become a part of our vibrant community.</p>
+            <img src="images/Tia xian.jpeg" alt="Tia Xian">
+        </section>
+        <!-- Add other sections for campaigns, characters, forums, resources, calendar here -->
+    </main>
+</body>
+</html>
