@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Regular';
+            src: url('fonts/Regular.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Title';
+            src: url('fonts/Title.ttf') format('truetype');
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,6 +45,19 @@
             </div>
         </section>
 
+        <section id="session-summary">
+            <h2>Session Summary</h2>
+            <div class="session-entry">
+                <h3>Last Session</h3>
+                <p>Summary of the last session...</p>
+            </div>
+        </section>
+
+        <section id="campaign-details">
+            <h2>Campaign Details</h2>
+            <p>Read about the ongoing campaign and its story...</p>
+        </section>
+
         <section id="important-characters">
             <h2>Important Characters</h2>
             <div class="character">
@@ -61,6 +83,12 @@
             </div>
             <!-- Add more locations as needed -->
         </section>
+
+        <section id="theory-crafting">
+            <h2>Character Builds & Theory Crafting</h2>
+            <p>Discuss and update your character builds...</p>
+        </section>
+
     </main>
 
     <footer>
