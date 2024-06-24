@@ -9,7 +9,7 @@
 body {
     background: url('../images/Background1.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Regular', sans-serif;
     color: #333;
 }
 
@@ -65,6 +65,8 @@ nav ul li a img:hover {
 /* Main Content */
 main {
     padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .map-section {
@@ -91,11 +93,11 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#important-characters, #important-locations {
-    padding: 20px;
+section {
+    margin-bottom: 40px;
 }
 
-.character, .location {
+.session-entry, .character, .location {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -107,21 +109,21 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.character img, .location img {
+.session-entry img, .character img, .location img {
     width: 80px;
     height: auto;
     border-radius: 10px;
     margin-right: 10px;
 }
 
-.character:hover, .location:hover {
+.session-entry:hover, .character:hover, .location:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Title', serif;
     color: #6b4226; /* A rustic brown color */
     margin-bottom: 10px;
 }
