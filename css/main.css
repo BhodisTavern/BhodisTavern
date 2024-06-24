@@ -1,7 +1,7 @@
 body {
     background: url('../images/Background1.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'regular', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,12 +10,14 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .main-banner {
     width: 100%;
-    max-height: 400px;
+    max-height: 300px;
     object-fit: cover;
+    border-bottom: 5px solid #6b4226;
 }
 
 nav ul {
@@ -23,7 +25,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav ul li {
@@ -31,9 +33,10 @@ nav ul li {
 }
 
 nav ul li img {
-    width: 100px;
+    width: 80px;
     height: auto;
     transition: transform 0.3s ease;
+    border-radius: 10px;
 }
 
 nav ul li img:hover {
@@ -44,6 +47,9 @@ nav ul li img:hover {
     display: flex;
     align-items: center;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .map-image {
@@ -54,8 +60,9 @@ nav ul li img:hover {
 
 .map-description {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #important-characters, #important-locations {
@@ -63,6 +70,7 @@ nav ul li img:hover {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    justify-content: center;
 }
 
 .character, .location {
@@ -71,6 +79,8 @@ nav ul li img:hover {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
 }
 
 .character img, .location img {
@@ -79,18 +89,27 @@ nav ul li img:hover {
     border-radius: 10px 10px 0 0;
 }
 
+.character:hover, .location:hover {
+    transform: scale(1.05);
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'title', serif;
+    font-family: 'Playfair Display', serif;
     color: #6b4226; /* A rustic brown color */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
 }
